@@ -1,0 +1,37 @@
+<template>
+  <div class="App">
+    <h1 class="title">Spider Chart 🕷</h1>
+    <RadarChart />
+  </div>
+</template>
+
+<script>
+import RadarChart from "./components/RadarChart.vue";
+
+export default {
+  name: "App",
+  components: {
+    RadarChart,
+  },
+  data() {
+    return {
+      chartData: {},
+    };
+  },
+};
+</script>
+
+<style>
+.title {
+  background-color: orange;
+  font-size: 2.5rem;
+  padding: 30px;
+  margin: -10px;
+  margin-bottom: 50px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+</style>
